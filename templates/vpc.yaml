@@ -72,7 +72,7 @@ Resources:
     Type: AWS::EC2::Route
     Properties:
       RouteTableId: !Ref RouteTable
-      DestinationCidrBlock: 0.0.0.0/0
+      DestinationCidrBlock: 10.10.0.0/16
       GatewayId: !Ref InternetGateway
 
   Subnet1RouteTableAssociation:
